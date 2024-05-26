@@ -79,6 +79,9 @@ margin: auto;
     .redes {
 cursor: pointer;
     }
+    .redes img {
+        color: #105118;
+    }
     .cordoba{
         color: #105118;
         margin-top: 10px;
@@ -363,4 +366,27 @@ width: 400px;
 .mail p {
     color: #fff;
     font-size: small;
+}
+
+.pagina-productos {
+    display: flex; 
+    
+    flex-direction: column;
+
+}
+@media (max-width:500px) {
+    .productos-detalles-imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 5px;
+    }
+}
+@media (max-width:500px) {
+    .producto-detalles-texto h2 {
+        font-size: medium;
+        font-weight: bold;
+    }
 }
