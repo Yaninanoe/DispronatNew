@@ -24,7 +24,13 @@ header {
 }
 header img {
     width: 250px;
-    margin-left: 100px;
+    margin-left: 70px;
+}
+
+.navbar-toggler {
+    color: #105118;
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 .parrafo-envios {
@@ -43,20 +49,27 @@ margin: auto;
 
 
 .nav-link:hover{
-    color: rgb(191, 225, 67);
+    color: rgb(52, 52, 209);
     }
     
 .navbar-nav {
         display: flex;
         flex-direction: column;
-       
         font-size: large
     }
+    @media (max-width:500px){
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+   
+    
     @media (max-width:500px) {
         .nav-link {
             font-size: small;
-        width: 100px;
-        margin-top: 5px;
+        width: 70px;
+        padding-left: 2px;
         }
         }
     
@@ -69,9 +82,22 @@ margin: auto;
         margin-top: 60px;
         color: #105118;
     }
+    @media (max-width:500px) {
+        .iconos-redes {
+        display: none;
+        }
+    }
 
+    .iconos-redes-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
 
-   
     .redes {
         padding-left: 10px;
         color: #105118;
@@ -81,6 +107,13 @@ cursor: pointer;
     }
     .redes img {
         color: #105118;
+    }
+    .redes-footer {
+        padding-left: 10px;
+        color: #105118;
+    }
+    .redes-footer {
+cursor: pointer;
     }
     .cordoba{
         color: #105118;
@@ -95,8 +128,8 @@ cursor: pointer;
     
 
     .nav-link {
-        background-color: #14bd28;
-        border-radius: 15%;
+        background-color: #c9f393;
+        border-radius: 10%;
         margin-right: 10px;
     }
 
@@ -390,3 +423,4 @@ width: 400px;
         font-weight: bold;
     }
 }
+
